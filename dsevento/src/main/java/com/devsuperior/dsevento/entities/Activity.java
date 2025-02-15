@@ -84,4 +84,8 @@ public class Activity {
     public List<Block> getBlocks() {
         return blocks;
     }
+
+    public Set<Participant> getParticipant() {
+        return participant;
+    }
 }
