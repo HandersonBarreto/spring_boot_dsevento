@@ -44,4 +44,8 @@ public class Category {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public List<Activity> getActivities() {
+        return activities;
+    }
 }

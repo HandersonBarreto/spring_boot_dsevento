@@ -23,6 +23,9 @@ public class Activity {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    @OneToMany(mappedBy = "activity")
+    List<Block> blocks = new ArrayList<>();
+
     public Activity(){
 
     }
@@ -64,5 +67,13 @@ public class Activity {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public List<Block> getBlocks() {
+        return blocks;
     }
 }
